@@ -1,0 +1,7 @@
+<modus-table [data]="data" [columns]="columns"></modus-table>
+
+<p>Click button to trigger second table:</p>
+<button (click)="show()">click</button>
+
+<modus-table *ngIf="showSecondTable" [data]="data" [columns]="columns" [rowSelection]="true" (rowSelectionChange)="selectionChange($event)"></modus-table>
+    
